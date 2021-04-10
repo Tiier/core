@@ -5,9 +5,7 @@
       <router-link to="/play">Play</router-link> |
       <router-link to="/info">Info</router-link>
     </nav>
-    <div class="container">
-      <router-view/>
-    </div>
+    <router-view/>
   </main>
 </template>
 
