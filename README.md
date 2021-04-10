@@ -1,4 +1,6 @@
-# vue-core
+# Tiier Core
+
+This is the Core front end to Tiier
 
 ## Project setup
 ```
@@ -19,6 +21,3 @@ npm run build
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
