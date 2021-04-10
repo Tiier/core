@@ -1,3 +1,37 @@
+:root {
+  --dark: rgb(44, 48, 46);
+  --light: rgb(255, 250, 241);
+  --link: rgb(66, 185, 131);
+  --success: rgb(40, 167, 69);
+  --danger: rgb(220, 53, 69);
+  --warning: rgb(255, 193, 7);
+  --info: rgb(23, 163, 184);
+  --border: rgb(224, 224, 224);
+  --disabled: rgb(177, 177, 177);
+}
+
 body {
-  border: 2px solid red;
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  column-gap: 1rem;
+}
+
+nav a {
+  transition: all 0.5s ease;
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--link);
+}
+
+nav a:hover {
+  color: var(--info);
+}
+
+.router-link-exact-active {
+  color: var(--light);
 }
