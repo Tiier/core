@@ -19,17 +19,33 @@ body {
   color: var(--light);
 }
 
+.pixel {
+  font-family: GamePixie, monospace;
+}
+
+.pixel-disable {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+}
+
 .container {
   display: grid;
   grid-template-columns: 80% 20%;
   column-gap: 1rem;
 }
 
-a {
+nav a {
   transition: all 0.3s ease;
   text-decoration: none;
   font-weight: bold;
   color: var(--link);
+}
+
+a.btn {
+  width: 35%;
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--dark);
+  text-align: center;
 }
 
 a:hover {
@@ -56,7 +72,6 @@ a:hover {
   transition: all 0.3s ease;
   text-transform: uppercase;
   font-size: 24px;
-  font-family: 'GamePixie', monospace;
   background-color: var(--menu-bg);
   border: 3px solid;
   border-radius: 10px;

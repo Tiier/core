@@ -1,9 +1,10 @@
 <template>
-  <main id="app">
+  <main id="app" :class="font">
     <nav id="nav">
-      <router-link to="/">Menu</router-link> |
-      <router-link to="/play">Play</router-link> |
-      <router-link to="/info">Info</router-link>
+      <label>
+        <input type="checkbox" @change="disablePixelFont = !disablePixelFont">
+        Disable Pixel Font
+      </label>
     </nav>
     <router-view/>
   </main>
@@ -11,18 +12,23 @@
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  data () {
+    return {
+      disablePixelFont: false
+    }
+  },
+  computed: {
+    font () {
+      return this.disablePixelFont
+        ? 'pixel-disable'
+        : 'pixel'
+    }
+  }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-}
-
 #nav {
   padding: 30px;
 }

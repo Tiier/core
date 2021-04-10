@@ -1,15 +1,17 @@
 <template>
   <div class="home">
     <div class="menu">
-      <router-link to="/play">
-        <button class="btn">Play</button>
+      <router-link class="btn" to="/play">
+        Play
       </router-link>
-      <router-link to="/about">
-        <button class="btn">About</button>
+      <router-link class="btn" to="/about">
+        About
       </router-link>
-      <button class="btn">Reset</button>
-      <router-link to="/credits">
-        <button class="btn">Credits</button>
+      <router-link class="btn" to="/reset">
+        Reset
+      </router-link>
+      <router-link class="btn" to="/credits">
+        Credits
       </router-link>
     </div>
   </div>
@@ -31,15 +33,15 @@ export default {
 
 .menu {
   display: flex;
-   flex-flow: column wrap;
-  justify-content: space-around;
+  flex-flow: column wrap;
+  align-content: space-around;
   width: 25%;
 }
 
 .btn {
   cursor: pointer;
-  width: 50%;
   padding: 1rem;
-  margin: 1rem auto 1rem auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 </style>
