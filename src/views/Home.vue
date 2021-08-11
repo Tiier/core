@@ -7,6 +7,9 @@
       <router-link class="btn" to="/about">
         About
       </router-link>
+      <router-link class="btn" to="/settings">
+        Settings
+      </router-link>
       <router-link class="btn" to="/reset">
         Reset
       </router-link>
